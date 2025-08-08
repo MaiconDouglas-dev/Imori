@@ -1,0 +1,123 @@
+/* style.css */
+
+:root {
+  --salmão: #f4a89f;
+  --cinza: #777;
+  --branco: #fff;
+  --cinza-claro: #f5f5f5;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--branco);
+  color: var(--cinza);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+header {
+  background-color: var(--branco);
+  box-shadow: 0 2px 4px #00000010;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--cinza);
+  font-weight: 500;
+}
+
+.hero {
+  background: linear-gradient(to right, var(--salmão), var(--branco));
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero button {
+  padding: 0.8rem 1.5rem;
+  background-color: var(--salmão);
+  color: var(--branco);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #e78e85;
+}
+
+.destaques {
+  padding: 3rem 1rem;
+  background-color: var(--cinza-claro);
+  text-align: center;
+}
+
+.beneficios {
+    text-align: center;
+}
+
+.depoimentos {
+    text-align: center;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.produto {
+  background: var(--branco);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #00000015;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.produto button {
+  margin-top: 0.5rem;
+  background-color: var(--salmão);
+  border: none;
+  color: var(--branco);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--cinza-claro);
+  text-align: center;
+  padding: 2rem 1rem;
+}
